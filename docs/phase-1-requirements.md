@@ -29,7 +29,7 @@ Tech Stack
 
 - Next.js 15
 - App Router
-- TypeScript
+- JavaScript (Strict Mode)
 - Tailwind CSS
 - shadcn/ui
 - Zustand

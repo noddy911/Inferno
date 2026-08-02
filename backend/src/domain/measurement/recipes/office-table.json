@@ -1,0 +1,19 @@
+{
+  "category": "office-table",
+  "displayName": "Office Table",
+  "panels": [
+    { "name": "top", "count": 1, "w": "width", "d": "depth", "thickness": 25, "material": "board" },
+    { "name": "leg", "count": 4, "w": "height", "d": "100", "thickness": 25, "material": "board" },
+    { "name": "modesty", "count": 1, "w": "width", "d": "100", "thickness": 18, "material": "board" },
+    { "name": "drawer", "count": "drawers", "w": "width-36", "d": "depth", "thickness": 16, "material": "board" }
+  ],
+  "hardware": {
+    "hinges": "0",
+    "channels": "drawers*2",
+    "handles": "drawers",
+    "locks": "0",
+    "connectors": "0"
+  },
+  "edgeBand": ["top"],
+  "finish": "exterior"
+}

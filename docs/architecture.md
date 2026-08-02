@@ -225,11 +225,9 @@ Frontend
 
 Backend
 
-* Docker
-* Railway
-* Render
-* Azure
-* AWS
+* Render (production, deployed as a Docker image)
+* Docker (local development / containerized deployment)
+* Alternatives: Railway, Azure, AWS
 
 Database
 

@@ -1,0 +1,21 @@
+{
+  "category": "loft",
+  "displayName": "Loft / Bunk Bed",
+  "panels": [
+    { "name": "post", "count": 4, "w": "height", "d": "100", "thickness": 25, "material": "board" },
+    { "name": "frameLong", "count": 2, "w": "depth", "d": "100", "thickness": 18, "material": "board" },
+    { "name": "frameShort", "count": 2, "w": "width", "d": "100", "thickness": 18, "material": "board" },
+    { "name": "deck", "count": "ceil(depth/80)", "w": "width", "d": "100", "thickness": 18, "material": "board" },
+    { "name": "guardrail", "count": 2, "w": "depth", "d": "300", "thickness": 18, "material": "board" },
+    { "name": "ladder", "count": 2, "w": "height", "d": "120", "thickness": 18, "material": "board" }
+  ],
+  "hardware": {
+    "hinges": "0",
+    "channels": "0",
+    "handles": "0",
+    "locks": "0",
+    "connectors": "8"
+  },
+  "edgeBand": ["guardrail", "ladder"],
+  "finish": "exterior"
+}

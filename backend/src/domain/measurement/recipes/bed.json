@@ -1,0 +1,20 @@
+{
+  "category": "bed",
+  "displayName": "Bed",
+  "panels": [
+    { "name": "headboard", "count": 1, "w": "width", "d": "height", "thickness": 18, "material": "board" },
+    { "name": "footboard", "count": 1, "w": "width", "d": "height", "thickness": 18, "material": "board" },
+    { "name": "sideRail", "count": 2, "w": "depth", "d": "height", "thickness": 18, "material": "board" },
+    { "name": "deck", "count": "ceil(depth/80)", "w": "width", "d": "100", "thickness": 18, "material": "board" },
+    { "name": "drawerBox", "count": "drawers", "w": "width-36", "d": "depth", "thickness": 16, "material": "board" }
+  ],
+  "hardware": {
+    "hinges": "0",
+    "channels": "drawers*2",
+    "handles": "drawers",
+    "locks": "0",
+    "connectors": "0"
+  },
+  "edgeBand": ["headboard", "footboard", "sideRail"],
+  "finish": "exterior"
+}

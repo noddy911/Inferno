@@ -1,0 +1,20 @@
+{
+  "category": "shoe-rack",
+  "displayName": "Shoe Rack",
+  "panels": [
+    { "name": "side", "count": 2, "w": "height", "d": "depth", "thickness": 18, "material": "board" },
+    { "name": "topBottom", "count": 2, "w": "width", "d": "depth", "thickness": 18, "material": "board" },
+    { "name": "back", "count": 1, "w": "width", "d": "height", "thickness": 6, "material": "backBoard", "faces": 0 },
+    { "name": "shelf", "count": "shelves", "w": "width-36", "d": "depth", "thickness": 16, "material": "board" },
+    { "name": "door", "count": "shutters", "w": "height", "d": "width/shutters", "thickness": 18, "material": "board", "faces": 2 }
+  ],
+  "hardware": {
+    "hinges": "shutters*2",
+    "channels": "0",
+    "handles": "shutters",
+    "locks": "0",
+    "connectors": "0"
+  },
+  "edgeBand": ["side", "shelf", "door"],
+  "finish": "exterior"
+}

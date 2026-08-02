@@ -13,6 +13,7 @@ Display
 - Total Projects
 - Active Quotations
 - Revenue
+- Material Size cutting and wastage
 - Material Cost
 - Recent Projects
 - Pending Approvals

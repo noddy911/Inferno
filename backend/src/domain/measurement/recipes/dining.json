@@ -1,0 +1,19 @@
+{
+  "category": "dining",
+  "displayName": "Dining Table",
+  "panels": [
+    { "name": "top", "count": 1, "w": "width", "d": "depth", "thickness": 25, "material": "board" },
+    { "name": "leg", "count": 4, "w": "height", "d": "100", "thickness": 25, "material": "board" },
+    { "name": "apronLong", "count": 2, "w": "width", "d": "150", "thickness": 18, "material": "board" },
+    { "name": "apronShort", "count": 2, "w": "depth", "d": "150", "thickness": 18, "material": "board" }
+  ],
+  "hardware": {
+    "hinges": "0",
+    "channels": "0",
+    "handles": "0",
+    "locks": "0",
+    "connectors": "4"
+  },
+  "edgeBand": ["top", "apronLong", "apronShort"],
+  "finish": "full"
+}

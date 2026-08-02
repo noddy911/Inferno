@@ -31,7 +31,7 @@ Technology
 
 - Next.js 15 App Router
 - React
-- TypeScript
+- JavaScript (Strict Mode)
 - Tailwind CSS
 - shadcn/ui
 - Zustand
@@ -62,7 +62,7 @@ Technology
 
 - Node.js
 - Express
-- TypeScript
+- JavaScript (Strict Mode)
 - MongoDB
 - Mongoose
 - JWT
@@ -93,7 +93,7 @@ Use:
 - SOLID
 - DRY
 - Feature-based folders
-- Strict TypeScript
+- JavaScript (Strict Mode)
 - ESLint
 - Prettier
 
@@ -154,7 +154,7 @@ Complete one module before starting another.
 After each phase:
 
 - verify build
-- verify TypeScript
+- verify type checks
 - verify linting
 - summarize changes
 - wait for confirmation
@@ -196,3 +196,29 @@ Generate
 - Seed scripts
 
 Always prefer maintainability over shortcuts.
+
+
+
+
+# Documentation
+
+Before implementing any feature, always read the relevant documents inside the `docs/` directory.
+
+Use the documents as the source of truth.
+
+Read:
+
+- docs/architecture.md
+- docs/api-spec.md
+- docs/database-schema.md
+- docs/coding-standards.md
+
+Before starting any phase, also read:
+
+- docs/phase-1-requirements.md
+- docs/phase-2-requirements.md
+- docs/phase-3-requirements.md
+
+Never ignore these documents.
+
+If implementation conflicts with the documentation, ask for clarification instead of making assumptions.

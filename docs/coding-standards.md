@@ -35,15 +35,16 @@ Business logic must never exist in the frontend.
 
 ---
 
-# TypeScript Standards
+# JavaScript Standards
 
-* Enable strict mode.
-* Never use `any`.
-* Prefer `unknown` over `any`.
-* Define interfaces and types for all public APIs.
-* Use enums only when appropriate.
-* Prefer type aliases for complex object structures.
-* Export reusable types from dedicated files.
+Both the frontend and backend are written in JavaScript (Strict Mode).
+
+* Enable JavaScript strict mode (ESM modules are strict by default).
+* Use `===` / `!==`; never rely on loose equality.
+* Prefer `const` over `let`; never use `var`.
+* Define types for all public APIs using JSDoc (`@typedef`, `@param`, `@returns`).
+* Keep JSDoc types precise; avoid `{*}` (any) where a concrete type exists.
+* Prefer small, focused modules and composition over large classes.
 
 ---
 
@@ -370,7 +371,7 @@ Before submitting code:
 * Builds successfully
 * Passes linting
 * Passes type checking
-* Uses strict TypeScript
+* Strict JavaScript (Strict Mode) with ESLint and JSDoc typing
 * No duplicated logic
 * No hardcoded secrets
 * Proper validation
@@ -391,7 +392,7 @@ Claude Code should:
 2. Explain the proposed architecture.
 3. Generate one feature at a time.
 4. Verify compilation.
-5. Verify TypeScript.
+5. Verify type checks.
 6. Verify linting.
 7. Summarize completed work.
 8. Wait for confirmation before continuing.
