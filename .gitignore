@@ -18,3 +18,120 @@ Thumbs.db
 # Editor
 .vscode/
 .idea/
+
+```gitignore
+# =========================
+# Dependencies
+# =========================
+node_modules/
+.pnpm-store/
+.npm/
+
+# =========================
+# Build Output
+# =========================
+.next/
+out/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Runtime Files
+# =========================
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# =========================
+# IDE & Editor
+# =========================
+.vscode/
+.idea/
+*.code-workspace
+
+# =========================
+# Temporary Files
+# =========================
+tmp/
+temp/
+.cache/
+.eslintcache
+
+# =========================
+# Testing
+# =========================
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# =========================
+# Database
+# =========================
+*.sqlite
+*.db
+mongodb-data/
+
+# =========================
+# Uploads
+# =========================
+uploads/
+public/uploads/
+
+# =========================
+# Cloudinary / Secrets
+# =========================
+service-account.json
+credentials.json
+*.pem
+*.key
+*.crt
+
+# =========================
+# Docker
+# =========================
+docker-data/
+
+# =========================
+# Claude Code
+# =========================
+.claude/
+.claude-cache/
+
+# =========================
+# OmniRoute
+# =========================
+.omniroute/
+
+# =========================
+# Misc
+# =========================
+*.swp
+*.swo
