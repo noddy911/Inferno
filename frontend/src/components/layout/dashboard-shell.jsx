@@ -5,6 +5,7 @@ import { Sheet, SheetContent } from '@/components/ui/sheet';
 import { useMediaQuery } from '@/hooks/use-media-query';
 import { Header } from './header';
 import { Sidebar, SidebarNav } from './sidebar';
+import { AiAssistantDrawer } from './ai-assistant-drawer';
 
 /**
  * App shell: fixed sidebar on desktop, slide-over sheet on mobile,
@@ -33,6 +34,8 @@ export function DashboardShell({ children }) {
         <Header onOpenMenu={() => setMobileOpen(true)} />
         <main className="flex-1 p-4 md:p-6">{children}</main>
       </div>
+
+      <AiAssistantDrawer />
     </div>
   );
 }

@@ -6,20 +6,21 @@ import {
   Settings,
   Sofa,
   Users,
+  Sliders,
 } from 'lucide-react';
 
 /**
- * App navigation. Phase-2 sections are stubbed with `soon: true` and rendered
- * disabled so they don't link to non-existent routes.
+ * App navigation. Phase-3 sections are now enabled.
  *
  * @type {Array<{label: string, href: string, icon: any, soon?: boolean}>}
  */
 export const navItems = [
-  { label: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
+  { label: 'Dashboard & Reports', href: '/dashboard', icon: LayoutDashboard },
   { label: 'Clients', href: '/clients', icon: Users, soon: true },
   { label: 'Projects', href: '/projects', icon: FolderKanban, soon: true },
   { label: 'Rooms', href: '/rooms', icon: Sofa, soon: true },
-  { label: 'Furniture & Materials', href: '/materials', icon: Package, soon: true },
-  { label: 'Quotations', href: '/quotations', icon: FileText, soon: true },
-  { label: 'Settings', href: '/settings', icon: Settings, soon: true },
+  { label: 'Materials Master', href: '/materials', icon: Package },
+  { label: 'Calculation Simulator', href: '/simulator', icon: Sliders },
+  { label: 'Quotations & BOQ', href: '/quotations', icon: FileText },
+  { label: 'Settings & Pricing', href: '/settings', icon: Settings },
 ];
