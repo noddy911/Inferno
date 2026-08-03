@@ -38,7 +38,7 @@ export function SignupForm() {
 
   async function onSubmit({ name, email, password }) {
     try {
-      await registerAccount.mutateAsync({ name, email, password });
+      await registerAccount.mutateAsync({ name, email, password, role: 'designer' });
       toast.success('Account created — welcome aboard!');
       router.replace('/dashboard');
     } catch (err) {

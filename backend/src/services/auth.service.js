@@ -24,8 +24,8 @@ export const AuthService = {
     const existing = await UserRepository.findByEmail(data.email);
     if (existing) throw conflict('An account with this email already exists');
 
-    // Public signup always creates a client account. Other roles are provisioned by admins/seed.
-    const user = await UserRepository.create({ ...data, role: 'client' });
+    // Public signup defaults to client unless specified
+    const user = await UserRepository.create({ ...data, role: data.role || 'client' });
     const tokens = await issueTokens(user);
     return { user: user.toAuthJSON(), ...tokens };
   },

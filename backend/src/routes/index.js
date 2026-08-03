@@ -9,6 +9,7 @@ import boqRoutes from '../adapters/http/routes/boq.routes.js';
 import quotationRoutes from '../adapters/http/routes/quotation.routes.js';
 import reportRoutes from '../adapters/http/routes/report.routes.js';
 import projectRoutes from '../adapters/http/routes/project.routes.js';
+import roomRoutes from '../adapters/http/routes/room.routes.js';
 
 const router = Router();
 
@@ -22,5 +23,8 @@ router.use(boqRoutes);
 router.use(quotationRoutes);
 router.use(reportRoutes);
 router.use(projectRoutes);
+
+// Nested rooms under projects: /projects/:projectId/rooms
+router.use('/projects/:projectId/rooms', roomRoutes);
 
 export default router;
